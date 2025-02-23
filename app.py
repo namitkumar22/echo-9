@@ -309,7 +309,6 @@ def main():
             if st.button(label, key=f"quick_{label}"):
                 st.session_state.current_query = f"{query}?"
                 st.session_state.should_send = True
-                st.session_state.current_query = ''
     
     # Middle Column - Chat Interface
     with middle_col:
@@ -346,7 +345,6 @@ def main():
             send_btn = st.button("Send ➤")
             if send_btn and st.session_state.current_query:
                 st.session_state.should_send = True
-                st.session_state.current_query = ''
         
         # Handle voice input and auto-send
         if speak_btn:
