@@ -312,7 +312,7 @@ def main():
     
     # Middle Column - Chat Interface
     with middle_col:
-        st.title("Echo-9 Protocol Assistant")
+        st.title("Garuda")
         st.markdown("##### Military Emergency Response System")
         
         # Status Bar
